@@ -2,7 +2,7 @@
 
 // fetch("todos/luigi.json")
 //   .then((response) => {
-//     console.log("resolved", response);
+//     console.log("resolved");
 //     return response.json();
 //   })
 //   .then((data) => {
