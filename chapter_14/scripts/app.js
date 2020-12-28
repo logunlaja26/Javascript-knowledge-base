@@ -62,16 +62,8 @@ cityForm.addEventListener("submit", (e) => {
   updateCity(city)
     .then((data) => updateUI(data))
     .catch((err) => console.log(err));
-
-  // set local storage
-  localStorage.setItem("location", city);
 });
 
-if (localStorage.getItem("location")) {
-  updateCity(localStorage.getItem("location"))
-    .then((data) => updateCity(data))
-    .catch((err) => console.log(err));
-}
 console.log("-------Ternary Condition Example--------");
 const result = true ? "value1" : "value2";
 console.log(result);
